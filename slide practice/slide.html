@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My slide</title>
+        <style>
+            .slide-container{
+                height: 350px;
+                white-space: nowrap;
+                padding-left: 10px;
+                margin-left: 20px;
+                overflow-x:scroll;
+                margin: 0px;
+
+            }
+            .slide{
+                width: 600px;
+                background-color: lightpink;
+                border: 1px solid red;
+                margin-bottom: 5px;
+                margin-right: 5px;
+                height:300px;
+                display: inline-block;
+
+            }
+            .normal-flow{
+                background-color: green;
+                height: 200px;
+
+            }
+            body {
+                padding-bottom: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slide-container">
+            <div class="slide">
+                1
+            </div>
+            <div class="slide">
+                2
+            </div>
+            <div class="slide">
+                3
+           </div>
+            <div class="slide">
+                4
+            </div>
+        </div>
+        <div class="normal-flow">
+            normal flow
+        </div>
+    </body>
+</html>

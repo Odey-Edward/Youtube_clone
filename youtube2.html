@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This is our Header -->
+    <header class="header">
+        <div class="left_section">
+            <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+            <img class="youtube-logo" src="icons/youtube-logo.svg">
+        </div>
+
+        <div class="middle_section">
+            <input class="search_bar" type="text" placeholder="Search"/>
+            <button class="search-button">
+                <img class="search_icon" src="icons/search.svg">
+                <div class="tool_tip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice_icon" src="icons/voice-search-icon.svg">
+                <div class="tool_tip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right_section">
+            <div class="upload_icon_div">
+                <div class="tool_tip">Create</div>
+                <img class="upload-icon" src="icons/upload.svg">
+            </div>
+            <div class="youtube_app_div">
+                <div class="tool_tip">Youtube Apps</div>
+                <img class="youtube-apps-icon" src="icons/youtube-apps (1).svg">
+            </div>
+            <div class="notification-div">
+                <div class="notification-count">3</div>
+                <div class="tool_tip">Notifications</div>
+                <img class="notification-icon" src="icons/notifications.svg">
+            </div>
+            <img class="my_channel_pic" src="thumbnail/my-channel.jpeg">
+        </div>
+    </header>
+
+    <!-- This is our navigation bar -->
+    <nav class="sidebar">
+        <div class="sidebar-icon">
+            <img src="icons/home (1).svg">
+            <label>Home</label>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/explore.svg">
+            <label>Explore</label>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/subscriptions.svg">
+            <label>Subscriptions</label>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/originals (1).svg">
+            <label>Originals</label>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/youtube-music.svg">
+            <label>YouTube Music</label>
+        </div>
+        <div class="sidebar-icon">
+            <img src="icons/library.svg">
+            <label>Library</label>
+        </div>
+    </nav>
+  
+    <!-- This is the main section of our webpage -->
+    <main>
+        <section class="video_grid">
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <img class="thumbnail" src="thumbnail/thumbnail-1.webp"/>
+                    </a>
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-1.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-1.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Marques Brownlee</p>
+                                    <p class="subscribers">15M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                        <p class="video_author">
+                            Marques Brownlee 
+                        </p>
+                        <p class="video_stat">
+                            3.4M views · 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                        <img class="thumbnail" src="thumbnail/thumbnail-2.webp"/>
+                    </a>
+                    <div class="video-time">8:20</div>
+                </div>
+                <div class="video_info_grid">
+
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-2.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-2.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Markipilier</p>
+                                    <p class="subscribers">30M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                        <!-- End of profile-picture-div -->
+                    </div>
+
+                    <div class="video_info">
+                        <p class="video_title">
+                            Try Not to Laugh Challenge #9
+                        </p>
+                        <p class="video_author">
+                            Markipilier
+                        </p>
+                        <p class="video_stat">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+                        <img class="thumbnail" src="thumbnail/thumbnail-3.webp"/>
+                    </a>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-3.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-3.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>SSSniperWolf</p>
+                                    <p class="subscribers">2M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+                        <p class="video_author">
+                            SSSniperWolf
+                        </p>
+                        <p class="video_stat">
+                            12M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                        <img class="thumbnail" src="thumbnail/thumbnail-4.webp"/>
+                    </a>
+                    <div class="video-time">22:09</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-4.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-4.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Markipilier</p>
+                                    <p class="subscribers">5M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            The Simplest Math Problem No One Can Solve &#183; Collatz...
+                        </p>
+                        <p class="video_author">
+                            Markipilier
+                        </p>
+                        <p class="video_stat">
+                            19M views · 4 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+                        <img class="thumbnail" src="thumbnail/thumbnail-5.webp"/>
+                    </a>
+                    <div class="video-time">11:17</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-5.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-5.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>CS Dojo</p>
+                                    <p class="subscribers">15M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Kadana's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                        <p class="video_author">
+                            CS Dojo
+                        </p>
+                        <p class="video_stat">
+                            159k views &#183; 5 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                        <img class="thumbnail" src="thumbnail/thumbnail-6.webp"/>
+                    </a>
+                    <div class="video-time">19:59</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-6.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-6.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>MrBreast</p>
+                                    <p class="subscribers">21M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Anything You Can Fit in The Circle I'll Pay For
+                        </p>
+                        <p class="video_author">
+                            MrBreast
+                        </p>
+                        <p class="video_stat">
+                            141M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                        <img class="thumbnail" src="thumbnail/thumbnail-7.webp"/>
+                    </a>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-7.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-7.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>RealLifeLore</p>
+                                    <p class="subscribers">3.4M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Why Planes Don't Fly Over Tibet
+                        </p>
+                        <p class="video_author">
+                            RealLifeLore
+                        </p>
+                        <p class="video_stat">
+                            6.6M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <a href="https://www.youtube.com/watch?v=lFm4EM1juls">
+                        <img class="thumbnail" src="thumbnail/thumbnail-8.webp"/>
+                    </a>
+                    <div class="video-time">7:12</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-8.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-8.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Tech Vision</p>
+                                    <p class="subscribers">8.1M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Inside The World's Biggest Passenger Plane
+                        </p>
+                        <p class="video_author">
+                            Tech Vision
+                        </p>
+                        <p class="video_stat">
+                            3.7M views &#183; 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <img class="thumbnail" src="thumbnail/thumbnail-9.webp"/>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-9.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-9.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>ThenX</p>
+                                    <p class="subscribers">18M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            The SECRET to Human STRENGTH
+                        </p>
+                        <p class="video_author">
+                            ThenX
+                        </p>
+                        <p class="video_stat">
+                            20M views &#183; 3 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <img class="thumbnail" src="thumbnail/thumbnail-10.webp"/>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-10.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-10.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Business Insider</p>
+                                    <p class="subscribers">7.2M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            How The World Largest Cruise Ship Make 30,000 Meals Everyday
+                        </p>
+                        <p class="video_author">
+                            Business Insider
+                        </p>
+                        <p class="video_stat">
+                            14M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <img class="thumbnail" src="thumbnail/thumbnail-11.webp"/>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-11.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-11.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>Destination Tips</p>
+                                    <p class="subscribers">1.8M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                        </p>
+                        <p class="video_author">
+                            Destination Tips
+                        </p>
+                        <p class="video_stat">
+                            3M views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video_preview">
+                <div class="thumbnail_row">
+                    <img class="thumbnail" src="thumbnail/thumbnail-12.webp"/>
+                    <div class="video-time">9:13</div>
+                </div>
+                <div class="video_info_grid">
+                    <div class="channel_picture">
+                        
+                        <!-- This div enable hover only on the main profile picture in order to 
+                        activate the channel preview styles -->
+                        <div class="profile-picture-div">
+
+                            <!-- main profile picture -->
+                            <img class="profile_picture" src="thumbnail/channel-12.jpeg"/>
+
+                            <!-- channel preview div -->
+                            <div class="channel_preview">
+                                <div class="channel_preview_picture">
+                                    <img src="thumbnail/channel-12.jpeg"/>
+                                </div>
+                                <div class="channel_preview_author">
+                                    <p>TED-Ed</p>
+                                    <p class="subscribers">6.6M subscribers</p>
+                                </div>
+                            </div>
+                            <!-- End of the channel preview div -->
+                            
+                        </div>
+                    </div>
+                    <div class="video_info">
+                        <p class="video_title">
+                            What would happen if you didn't drink water? - Mia Nacamulli
+                        </p>
+                        <p class="video_author">
+                            TED-Ed
+                        </p>
+                        <p class="video_stat">
+                            12M views &#183; 5 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
